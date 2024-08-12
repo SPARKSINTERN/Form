@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+</head>
+<body>
+    <form method="POST" action="/submit_form">
+        <label for="field1">Field 1:</label>
+        <input type="text" id="field1" name="field1" value="{{ data.get('field1', '') }}"><br>
+
+        <label for="field2">Field 2:</label>
+        <input type="text" id="field2" name="field2" value="{{ data.get('field2', '') }}"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
